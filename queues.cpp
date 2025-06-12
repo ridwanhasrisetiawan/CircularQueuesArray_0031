@@ -23,7 +23,7 @@ class Queues {
 
 if ((FRONT == 0 && REAR == max -1) || (FRONT == REAR + 1)) {
     cout << "\nQueue overflow\n";
-    return 0;
+    return;
 }
 
 if (FRONT == -1) {
@@ -49,6 +49,13 @@ else {
         }
         cout << "\nElement terhapus: " << queue_array[FRONT] << "\n";
 
-        
+
+        if (FRONT == REAR) {
+            FRONT = -1;
+            REAR = -1;
+        }
+        else {
+            
+        }
     }
 }
