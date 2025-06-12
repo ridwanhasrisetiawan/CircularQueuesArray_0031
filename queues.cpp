@@ -10,7 +10,7 @@ class queues {
 
     public:
     Queues() {
-        FRONY = -1;
+        FRONT = -1;
         REAR = -1;
     }
 
@@ -22,8 +22,13 @@ class queues {
     }
 
 
-if ((FRONT == 0 && REAR == max -1) || (FRONT == REAR)) {
+if ((FRONT == 0 && REAR == max -1) || (FRONT == REAR + 1)) {
     COUT << "\nQueue overflow\n";
     return 0;
+}
+
+if (FRONT == -1) {
+    FRONT = 0;
+    REAR = 0;
 }
 }
