@@ -20,4 +20,10 @@ class queues {
         cin >> num;
         cout << endl;
     }
+
+
+if ((FRONT == 0 && REAR == max -1) || (FRONT == REAR)) {
+    COUT << "\nQueue overflow\n";
+    return 0;
+}
 }
