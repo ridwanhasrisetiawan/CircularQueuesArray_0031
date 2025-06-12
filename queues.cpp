@@ -39,4 +39,16 @@ else {
         queue_array[REAR] = num;
 }
     }
+    
+
+    void remove() {
+
+        if (FRONT == -1)  {
+            cout << "Queue underflow\n";
+            return;
+        }
+        cout << "\nElement terhapus: " << queue_array[FRONT] << "\n";
+
+        
+    }
 }
